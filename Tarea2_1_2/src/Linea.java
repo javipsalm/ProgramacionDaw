@@ -21,6 +21,10 @@ public class Linea extends Punto {
     public double calcularlongitud(){
         return Math.sqrt(Math.pow(this.puntoFinal.getX() - super.getX(), 2) + Math.pow(this.puntoFinal.getY() - super.getY(), 2));
     }
+    
+    public double calcularPendiente(){
+        return (this.puntoFinal.getY() - super.getY()) / (this.puntoFinal.getX() - super.getX());
+    }
 
     
 
